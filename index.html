@@ -35,7 +35,6 @@
   }
   .hero .zh-deco { font-size:13px; letter-spacing:8px; color:var(--gold); opacity:.85; margin-bottom:14px; }
   h1 { font-family:"Noto Serif SC","Songti SC","STSong",serif; font-size:34px; letter-spacing:6px; font-weight:700; }
-  h1 .en-name { display:none; }
   .tagline { margin-top:10px; font-size:13.5px; color:var(--dim); letter-spacing:2px; }
   .hero-badges { margin-top:16px; display:flex; gap:8px; justify-content:center; flex-wrap:wrap; }
   .hero-badges span {
@@ -146,9 +145,6 @@
 </footer>
 
 <script>
-const IMG = p => `https://trae-api-cn.mchost.guru/api/ide/v1/tool_text_to_image?prompt=${encodeURIComponent(p)}&image_size=square`;
-const IMGW = p => `https://trae-api-cn.mchost.guru/api/ide/v1/tool_text_to_image?prompt=${encodeURIComponent(p)}&image_size=landscape_16_9`;
-
 const I18N = {
   en: {
     deco:"SICHUAN HERITAGE", store:"Lao Wang Sichuan Kitchen",
@@ -179,12 +175,12 @@ const MENU = [
       {
         name:{zh:"水煮鱼",en:"Boiled Fish in Chili Oil"}, price:68, spice:3, featured:true,
         desc:{zh:"滚油锁鲜，鱼片嫩滑，麻辣过瘾",en:"Tender fish in fiery chili oil, numbing & rich"},
-        img:IMGW("Professional food photography, Sichuan boiled fish in chili oil, tender fish slices with dried chilies, large ceramic bowl, dark wood table, warm lighting, steam, appetizing, high-end restaurant presentation")
+        img:"img/shuizhuyu.jpg"
       },
       {
         name:{zh:"回锅肉",en:"Twice-Cooked Pork"}, price:38, spice:2, featured:true,
         desc:{zh:"肥而不腻，灯盏窝形，下饭神器",en:"Caramelized pork belly with green peppers"},
-        img:IMGW("Professional food photography, twice-cooked pork belly slices with green chili peppers and leeks, glossy caramelized, dark ceramic plate, dark wood table, warm lighting, Sichuan cuisine, high-end restaurant presentation")
+        img:"img/huiguorou.jpg"
       }
     ]
   },
@@ -194,22 +190,22 @@ const MENU = [
       {
         name:{zh:"麻婆豆腐",en:"Mapo Tofu"}, price:28, spice:3,
         desc:{zh:"麻辣烫香，豆腐嫩滑入味",en:"Silky tofu in numbing chili sauce"},
-        img:IMG("Professional food photography, mapo tofu, silky tofu cubes in red chili sauce with minced pork and scallions, rustic ceramic bowl, dark table, warm lighting, high-end restaurant presentation")
+        img:"img/mapotofu.jpg"
       },
       {
         name:{zh:"宫保鸡丁",en:"Kung Pao Chicken"}, price:32, spice:2,
         desc:{zh:"荔枝口糖醋汁，花生酥脆",en:"Sweet-tangy chicken with crunchy peanuts"},
-        img:IMG("Professional food photography, kung pao chicken with peanuts and dried chilies, glossy sauce, dark ceramic plate, dark wood table, warm lighting, high-end restaurant presentation")
+        img:"img/kungpao.jpg"
       },
       {
         name:{zh:"鱼香茄子",en:"Yuxiang Eggplant"}, price:22, spice:1,
         desc:{zh:"咸甜酸辣，茄子软糯入味",en:"Braised eggplant in garlic sauce"},
-        img:IMG("Professional food photography, yuxiang eggplant, tender eggplant in glossy garlic sauce with minced pork, dark ceramic plate, dark wood table, warm lighting, high-end restaurant presentation")
+        img:"img/eggplant.jpg"
       },
       {
         name:{zh:"酸辣土豆丝",en:"Hot & Sour Potato"}, price:18, spice:2,
         desc:{zh:"刀工现切，酸辣爽脆",en:"Crisp shredded potato, tangy & hot"},
-        img:IMG("Professional food photography, hot and sour shredded potato, crisp julienne potatoes with chili and scallion, dark ceramic plate, dark wood table, warm lighting, high-end restaurant presentation")
+        img:"img/potato.jpg"
       }
     ]
   },
@@ -219,12 +215,12 @@ const MENU = [
       {
         name:{zh:"担担面",en:"Dandan Noodles"}, price:15, spice:3,
         desc:{zh:"红油芝麻香，一碗上头",en:"Noodles in sesame chili sauce"},
-        img:IMG("Professional food photography, dandan noodles in red sesame chili sauce with minced pork, chopsticks lifting noodles, ceramic bowl, dark table, warm lighting, high-end restaurant presentation")
+        img:"img/dandan.jpg"
       },
       {
         name:{zh:"米饭",en:"Steamed Rice"}, price:2, spice:0,
         desc:{zh:"东北五常大米，免费续",en:"Premium rice, free refills"},
-        img:IMG("Professional food photography, steamed white rice in traditional ceramic bowl, glistening grains, dark wooden table, warm lighting, minimalist, high-end restaurant presentation")
+        img:"img/rice.jpg"
       }
     ]
   }
